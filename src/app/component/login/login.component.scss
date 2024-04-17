@@ -1,0 +1,42 @@
+.rowg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Adjust as needed */
+    // width: 100px;
+}
+
+.card {
+    width: 350px; /* Adjust card width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for card */
+    transition: transform 0.3s ease; /* Add transition effect for card hover */
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+}
+
+.card-body {
+    text-align: center;
+    align-items: center;
+}
+
+.google-img {
+    width: 100px; /* Adjust image size as needed */
+    margin-bottom: 10px; /* Adjust vertical spacing between image and button */
+    transition: transform 0.3s ease; /* Add transition effect for image hover */
+}
+
+.google-img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.google-signin-btn {
+    background-color: #ffffff; /* Customize button background color */
+    border: 1px solid #dddddd; /* Customize button border */
+    color: #000000; /* Customize button text color */
+    padding: 8px 16px; /* Adjust button padding as needed */
+    cursor: pointer;
+    border-radius: 5px; /* Optional: Add border-radius for button */
+}

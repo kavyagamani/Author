@@ -1,0 +1,345 @@
+<!-- <app-slider></app-slider> -->
+<!--Books -->
+<div class="Books">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-10 offset-md-1">
+            <div class="titlepage">
+               <h2>{{book.title}} <strong class="black">{{book.title1}} </strong></h2>
+               <span><h5>{{book.description}}</h5></span> 
+            </div>
+         </div>
+      </div>
+     
+      <div class="row box">
+        @for (Innerbook of book.Innerbook; track Innerbook) {
+         <!-- malgudi days--->
+         <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="{{Innerbook.image}}" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">{{Innerbook.title}}</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     {{Innerbook.name}}
+                  </button>
+               </div>
+            </div>   
+         </div>
+        }
+         <!--end of malgudi-->
+         <!--the man eater malgudi-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/themaneater.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Man Eater Of Malgudi</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div> -->
+         <!---end of man eater malgudi-->
+         <!--vendor of sweets-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/thevendor.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Vendor Of Sweets</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div> -->
+         <!--end of vendor-->
+         <!--talkative man-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/talkative-man.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">Talkative Man</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of takative man-->
+         <!--the world of nagaraj-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/the-world.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The World Of Nagaraj</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of nagaraj-->
+          <!--the painter of signs-->
+          <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/painter-sign.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Painter of Signs</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                     Read More
+                  </button>
+               </div>
+            </div>
+         </div> -->
+         <!--end of Painter Signs-->
+          <!--the ramayana-->
+          <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/the-ramayana.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Ramayana</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of ramayana-->
+         <!--the grandmother tale-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/grandmother-tale.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Grandmother Tale</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of grandmother tale-->
+         <!--the swami and friends-->
+         <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/swami-friends.jpeg" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">The Swami and Friends</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of swami and friends-->
+          <!--the my days-->
+          <!-- <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="../assets/images/my-days.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">My Days</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModala">
+                     Read More
+                  </button>               
+               </div>
+            </div>
+         </div> -->
+         <!--end of my days-->
+      </div>
+   </div>
+</div>
+
+
+
+@for (Modalbook of book.Modalbook; track Modalbook) 
+{
+  <!-- Modal malgudi days-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">{{Modalbook.title}}</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+       </div>
+       <div class="modal-body">
+       {{Modalbook.description}}       
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{Modalbook.name}}</button>
+       </div>
+     </div>
+   </div>
+ </div>
+}
+ <!--end modal malgudi-->
+
+ <!--modal for man eater malgudi-->
+ <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Maner Eater Malgudi</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         Nataraj, owner of a small, friendly printing press in the enchanted city of Malgudi, has never been very successful at making enemies. Until, that is, he meets Vasu. Almost accidentally, Vasu, a pugnacious taxidermist, moves into Nataraj's attic, bringing an alarming stuffed jungle of hyenas, pythons, and tigers, and an assortment of dancing girls who clump up and down the printer's stairs. Vasu is definitely not a man to tangle with. But when, in search of bigger game, he threatens the beloved temple elephant, Nataraj rises to the occasion--and R. K. Narayan invests his story with all his warm, wicked, and delightful sense of comedy.
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+ <!--end of man eater malgudi-->
+ <!--modal for vendor of sweets-->
+ <!-- <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Vendor for Sweets</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         In R.K. Narayan’s novel The Vendor of Sweets, the tension between old and young India is the backdrop against which a father and son clash. Jagan, a 55 year old man who is steeped in tradition, is a bundle of contradictions. He is a passionate follower of Gandhi, embracing non-violent cooperation and an ascetic lifestyle. However, he is also boastful when it comes to his own self-control. It is not enough that he has renounced sugar and salt, he is compelled to tell others about it. Furthering the irony is that Jagan works as the titular vendor of sweets.      
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+ 
+ <!--end of modal vendor-->
+ <!--modal for talkative man-->
+ <!-- <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Thetalkative man</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         The Talkative Man tells the story of a mysterious stranger who arrives at the Malgudi train station to pursue a purported U.N. project. The stranger winds up staying at Talkative Man's home, where he begins to seduce the librarian's daughter.       
+      </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+<!--end of talkative modal-->
+<!--modal for the world of nagaraj man-->
+<!-- <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The World of Nagaraj</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         In The World of Nagaraj, the central character fancies himself as a man with a mission. Nagaraj does not fully understand the nature of this mission, even though he expends considerable energy pursuing it. His main purpose, he believes, is to write a biography of the mythological character Narada, who traveled through the human and heavenly worlds telling stories. No ordinary weaver of tales, Narada was a talented gossip whose revelations planted distrust and raised suspicion wherever he went. 
+         </div>      
+      <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+<!--end of world of nagaraj modal-->
+<!--modal for the painter sign-->       
+
+<!-- <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Painter Sign</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         The Painter of Signs tells the story of Raman, a sign-painter, and Daisy, who works at a Family Planning Clinic, who form a romantic relationship after Daisy hires Raman to paint a sign for the clinic.     
+        </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+<!--end of painter sign modal-->        
+
+<!--modal for the ramayana sign-->
+<!-- <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Ramayana</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+      R. K. Narayan’s The Ramayana: A Shortened Modern Prose Version of the Indian Epic (Suggested by the Tamil Version of Kamban) was first published in 1972 by Viking Press. The epic story of Rama’s journey contains the teachings of ancient Hindu sages, and these teachings continue to have a major influence on Indian culture.        
+      </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+
+<!--end of ramayana modal-->
+<!--modal for the grandmother tale-->
+<!-- <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Maner Eater Malgudi</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         The book is about Narayan's great grandmother who is forced to travel far and wide in search of her husband, as narrated to him by his grandmother       
+      </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+
+<!--end of grandmother modal-->
+<!--modal for the swami and friends-->
+<!-- <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">The Swami and friends</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         Swami and Friends is the story of the tumultuous friendship of Swaminathan, his four childhood friends, and a new boy named Rajam. It takes place in British-colonial India in the year 1930. The story begins by introducing Swaminathan and his friends Somu, Sankar, Mani, and Pea.     
+      </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+
+<!--end of grandmother modal-->
+<!--modal for the my days-->
+<!-- <div class="modal fade" id="exampleModala" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">My Days</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         In his usual winning, humorous style, R. K. Narayan shares his life story, beginning in his grandmother's garden in Madras with his ferocious pet peacock. As a young boy with no interest in school, he trains grasshoppers, scouts, and generally takes part in life's excitements.   
+      </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+<!--end of my days modal-->
+<!-- end Books -->
+<app-footer></app-footer>

@@ -1,0 +1,95 @@
+
+  <!-- <app-slider></app-slider> -->
+  <!-- about -->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="aboutheading">
+                    <h2>{{about.title}} <strong class="black">{{about.title2}} </strong></h2>
+                    <span><h5>{{about.titledescription}}</h5></span>
+                </div>
+            </div>
+        </div>
+        <div class="row border">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                  <p><b>{{biography}}</b></p>
+                    
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="../assets/images/narayan.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="../assets/images/rkn.png" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <h2>{{about.description1}}</h2>
+                  <p><b>{{biography1}}</b></p>
+                    
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <h2>{{about.description2}}</h2>
+                <ul>
+                    @for(book of about.books; track book){
+                        <li>{{book.title}}</li>
+
+                    }
+                    <!-- <li>
+                        The Man-Eater of Malgudi (1961, Viking)</li>
+<li>Swami and Friends (1935, Hamish Hamilton)</li>
+<li>The Painter of Signs (1977, Heinemann)</li>
+<li>The Bachelor of Arts (1937, Thomas Nelson)</li>
+<li>The Financial Expert (1952, Methuen)</li>
+<li>A Tiger for Malgudi (1983, Heinemann)</li>
+<li>The Guide (1958, Methuen)</li>
+<li>The Dark Room (1938, Eyre)</li>
+<li>Grandmother's Tale (1992, Indian Thought Publications)</li>
+<li>A Horse and Two Goats (1970)</li>
+<li> Malgudi Days (1942, Indian Thought Publications)</li>
+<li>The Grandmother's Tale and Selected Stories (1994, Viking)</li>
+<li> Lawley Road and Other Stories (1956, Indian Thought Publications)</li>
+ <li>The Emerald Route (1980, Indian Thought Publications)</li>
+<li>The Mahabharata (1978, Heinemann)</li>
+<li> Next Sunday (1960, Indian Thought Publications)</li>
+<li>My Days (1973, Viking)</li>                -->
+</ul>
+                    
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="../assets/images/rknbook.jpg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="../assets/images/award.jpeg" alt="img" /></figure>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <h2>{{about.description3}}</h2>
+                  <p><b>{{biography2}}
+                    </b></p>
+                    
+                    <!-- <a href="#">Read More</a> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div> 
+<!-- end about -->
+<app-footer></app-footer>

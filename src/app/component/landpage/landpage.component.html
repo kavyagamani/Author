@@ -1,0 +1,104 @@
+<!-- <p>landpage works!</p> -->
+<router-outlet></router-outlet>
+<!-- about -->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <div class="aboutheading">
+                    <h2>{{landpage.abouttitle}}<strong class="black">{{landpage.abouttitle1}}</strong></h2>
+                    <span><h5>{{landpage.aboutdescription}}</h5></span>
+                </div>
+            </div>
+        </div>
+        <div class="row border">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                <div class="about-box">
+                  <p><b>{{landpage.description2}}</b></p>
+                    <a  routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">{{landpage.aboutread}}</a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                <div class="about-box">
+                    <figure><img src="{{landpage.abouimage}}" alt="img" /></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- end about -->
+<!--Books -->
+<div class="Books">
+    <div class="container">
+       <div class="row">
+          <div class="col-md-10 offset-md-1">
+             <div class="titlepage">
+                <h2>{{landpage.title}} <strong class="black">{{landpage.title1}}</strong></h2>
+                <span><h5>{{landpage.description}}</h5></span> 
+             </div>
+          </div>
+       </div>
+       <div class="row box">
+         @for (Innerbook of landpage.Innerbook; track Innerbook) {
+         <!-- malgudi days--->
+         <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+               <img src="{{Innerbook.image}}" class="card-img-top" alt="...">
+               <div class="card-body">
+                  <h5 class="card-title mb-0">{{Innerbook.title}}</h5> 
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                     {{Innerbook.name}}
+                  </button>
+               </div>
+            </div>   
+         </div>
+        }
+   </div>
+</div>
+</div>
+         
+   
+ <!-- end Books -->
+ <!--contact-->
+ <div class="titlepage3">
+   <h2>{{landpage.contacttitle}} <strong class="black">{{landpage.contacttitle1}} </strong></h2>
+  <span><h5>{{landpage.contactdescription}}</h5></span> 
+</div>
+
+   
+
+<div class="Contact">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-10 offset-md-1">
+           
+        </div>
+     </div>
+     <div class="row contact-info">
+        @for (Iconcontact of landpage.Iconcontact; track Iconcontact) {
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+            <h3><i class="fas {{Iconcontact.icon}} fa-2x"></i></h3>
+            <h4><strong>{{Iconcontact.text}}</strong></h4>
+            <h5>{{Iconcontact.name}}</h5>
+        </div>
+     }
+        <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+            <h3><i class="far fa-envelope fa-2x"></i></h3>
+            <h4><strong>Email:</strong></h4>
+            <h5>xxxxxxx&#64;gmail.com</h5>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center">
+            <h3><i class="fas fa-phone-alt fa-2x"></i></h3>
+            <h4><strong>Phone:</strong></h4>
+            <h5>+1234567890</h5>
+        </div>
+    </div> -->
+    
+ 
+  </div>
+</div>
+</div>
+   
+<!--end contact-->
+
+ 

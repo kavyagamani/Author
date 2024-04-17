@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "author-e1e0b": {
+      "hosting": {
+        "novelauth": [
+          "author-e1e0b"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "author-e1e0b"
+  }
+}
