@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterLink,RouterLinkActive } from '@angular/router';
 import { AuthService } from '../../shared/auth.service';
-import { Auth } from '@angular/fire/auth';
+import  auth from 'firebase/app';
 import { AuthProvider } from '@angular/fire/auth';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -13,7 +14,7 @@ import { AuthProvider } from '@angular/fire/auth';
 })
 export class LoginComponent {
  
-constructor(public authservice:AuthService)
+  constructor(public authService: AuthService) {}
 
   
 }
