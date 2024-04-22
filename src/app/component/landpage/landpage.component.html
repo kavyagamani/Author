@@ -1,5 +1,8 @@
 <!-- <p>landpage works!</p> -->
 <router-outlet></router-outlet>
+<app-nav></app-nav>
+<app-slider></app-slider>
+
 <!-- about -->
 <div class="about">
     <div class="container">
@@ -28,7 +31,7 @@
 </div> 
 <!-- end about -->
 <!--Books -->
-<div class="Books">
+ <div class="Books">
     <div class="container">
        <div class="row">
           <div class="col-md-10 offset-md-1">
@@ -39,14 +42,14 @@
           </div>
        </div>
        <div class="row box">
-         @for (Innerbook of landpage.Innerbook; track Innerbook) {
+         @for (Innerbook of landpage.Innerbook; track Innerbook) { 
          <!-- malgudi days--->
          <div class="col-md-3">
             <div class="card" style="width: 18rem;">
                <img src="{{Innerbook.image}}" class="card-img-top" alt="...">
                <div class="card-body">
                   <h5 class="card-title mb-0">{{Innerbook.title}}</h5> 
-                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" (click)="onModal()">
                      {{Innerbook.name}}
                   </button>
                </div>
@@ -55,7 +58,7 @@
         }
    </div>
 </div>
-</div>
+</div> 
          
    
  <!-- end Books -->
@@ -100,5 +103,6 @@
 </div>
    
 <!--end contact-->
+<app-footer></app-footer>
 
  

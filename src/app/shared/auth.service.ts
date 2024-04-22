@@ -8,6 +8,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import{AngularFirestore,AngularFirestoreDocument} from '@angular/fire/compat/firestore';
 import { error } from 'console';
 import { User } from './user';
+import {getAuth ,signInWithPopup} from 'firebase/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -46,6 +47,7 @@ userData:any;//saved log in user data
   //   });
   //  }
   GoogleAuth() {
+    const provider = new GoogleAuthProvider();
     return this.AuthLogin(new GoogleAuthProvider()).then((res: any) => {
       this.router.navigate(['dashboard']);
     });

@@ -1,3 +1,4 @@
+import { LoginComponent } from './component/login/login.component';
 import  auth  from 'firebase/app';
 import { AboutComponent } from './component/about/about.component';
 import { Component } from '@angular/core';
@@ -14,11 +15,12 @@ import { AuthService } from './shared/auth.service';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { GoogleAuthProvider } from 'firebase/auth';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,RouterLink,RouterLinkActive,AboutComponent,BookComponent,ContactComponent,
-            NavComponent,FooterComponent,SliderComponent,LandpageComponent],
+            NavComponent,FooterComponent,SliderComponent,LandpageComponent,LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

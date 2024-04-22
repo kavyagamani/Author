@@ -1,4 +1,6 @@
-<!-- <app-slider></app-slider> -->
+<router-outlet></router-outlet>
+<app-nav></app-nav>
+<app-slider></app-slider>
 <!--Books -->
 <div class="Books">
    <div class="container">
@@ -152,9 +154,9 @@
 
 @for (Modalbook of book.Modalbook; track Modalbook) 
 {
-  <!-- Modal malgudi days-->
+  <!-- Modal malgudi days -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="{{Modalbook.modal}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog">
      <div class="modal-content">
        <div class="modal-header">
@@ -171,6 +173,8 @@
    </div>
  </div>
 }
+ 
+
  <!--end modal malgudi-->
 
  <!--modal for man eater malgudi-->

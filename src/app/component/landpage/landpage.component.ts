@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RouterLink,RouterLinkActive } from '@angular/router';
-
+import { Router } from '@angular/router';
+import { NavComponent } from '../nav/nav.component';
+import { SliderComponent } from '../slider/slider.component';
+import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-landpage',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,RouterLinkActive],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive,NavComponent,SliderComponent,FooterComponent],
   templateUrl: './landpage.component.html',
   styleUrl: './landpage.component.scss'
 })
@@ -43,6 +46,11 @@ export class LandpageComponent {
   ]
 
  
+  }
+  constructor(private router: Router){}
+  onModal()
+  {
+    this.router.navigate(['book']);
   }
 
 }
